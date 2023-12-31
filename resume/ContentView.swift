@@ -158,33 +158,37 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     
-                    VStack{
-                        Image("Github")
-                            .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                        Text("GitHub")
-                            .bold()
-                            .font(.title3)
+                    Link(destination: URL(string: "https://github.com/drestwn")!) {
+                        VStack{
+                            Image("Github")
+                                .resizable()
+                                .frame(width: 50.0, height: 50.0)
+                            Text("GitHub")
+                                .bold()
+                                .font(.title3)
+                        }
                     }
                     .padding()
-                    
-                    VStack{
-                        Image("LinkedIn")
-                            .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                        Text("LinkedIn")
-                            .bold()
-                            .font(.title3)
+                    Link(destination: URL(string: "https://www.linkedin.com/in/andremakmur/")!) {
+                        VStack{
+                            Image("LinkedIn")
+                                .resizable()
+                                .frame(width: 50.0, height: 50.0)
+                            Text("LinkedIn")
+                                .bold()
+                                .font(.title3)
+                        }
                     }
                     .padding()
-                    
-                    VStack{
-                        Image("X")
-                            .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                        Text("X")
-                            .bold()
-                            .font(.title3)
+                    Link(destination: URL(string: "https://twitter.com/drestwn")!) {
+                        VStack{
+                            Image("X")
+                                .resizable()
+                                .frame(width: 50.0, height: 50.0)
+                            Text("X")
+                                .bold()
+                                .font(.title3)
+                        }
                     }
                     .padding()
                     

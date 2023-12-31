@@ -112,7 +112,8 @@ struct ContentView: View {
             Group{
                 HStack{
                     Text("Education")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)                }
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)            
+                }
                 Rectangle()
                     .frame(height: 1)
                     .padding(.bottom,8)
@@ -189,14 +190,8 @@ struct ContentView: View {
                     
                     Spacer()
                 }
-
-                
-               
             }
-           
-            
         }
-        
         .padding()
         Spacer()
     }
